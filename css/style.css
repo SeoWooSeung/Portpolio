@@ -1,0 +1,313 @@
+section:nth-child(odd) {
+    background: #f9f9f9;
+    color: #000;
+}
+
+.header {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    z-index: 999;
+}
+
+.header h1 {
+    color: #fff;
+}
+
+.gnb {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    z-index: 999;
+    transform: translate(0, -50%);
+}
+
+.gnb li {
+    position: relative;
+    height: 80px;
+    width: 40px;
+    margin: 2px 0;
+}
+
+.gnb li a {
+    position: absolute;
+    inset: 0 0 0 0;
+    font-size: 0;
+}
+
+/* .gnb li a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 50%;
+    height: 1px;
+    background: #333;
+    transition: width 0.5s;
+}
+
+.gnb li.on a::after {
+    width: 100%;
+} */
+
+.gnb li a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 4px;
+    background: #333;
+    border-radius: 50%;
+}
+
+.gnb li a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+
+    transition: 0.5s;
+}
+
+.gnb li.on a::after {
+    border: 2px solid #333;
+}
+
+/* ************************************************************ */
+
+
+
+.main .section {
+    /* background: url(../images/tiles-5721151_1920.jpg)no-repeat center center/cover; */
+    background: #f9f9f9;
+}
+
+.con h2 {
+    font-family: 'Noto Sans KR';
+    text-shadow: 4px 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+.con .text {
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 150px;
+    font-weight: 800;
+
+    color: #fff;
+}
+
+.con .text01 {
+    position: absolute;
+    top: 50%;
+    right: -600px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 150px;
+    font-weight: 800;
+
+    color: #fff;
+}
+
+.con .text02 {
+    position: absolute;
+    top: 70%;
+    left: -200px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 150px;
+    font-weight: 800;
+
+    color: #fff;
+}
+
+.con {
+    position: relative;
+}
+
+.section .itm {
+    position: absolute;
+    /* top: -60%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 1920px;
+    height: 1000px; */
+    inset: 0 0 0 0;
+    z-index: 999;
+
+    border-radius: 0 0 0 0;
+
+    /* background: url(../images/pattern5.png); */
+    background: linear-gradient(to top, #ff1e00, #8d1ef5);
+    ;
+}
+
+.section .box1 {
+    /* position: relative; */
+    max-width: 1640px;
+    height: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 1px solid #ddd; */
+
+}
+
+.txt {
+    font-size: 100px;
+    font-weight: 900;
+    /* font-family: 'MiraeroNormal'; */
+}
+
+
+.txt h2::first-letter {
+    color: rgb(52, 180, 69);
+}
+
+.txt span {
+    font-size: 50px;
+}
+
+.box1 .num {
+    filter: url('#bbq');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1920px;
+    height: 500px;
+}
+
+.box1 .num:after {
+    content: "";
+    display: block;
+    width: 960px;
+    height: 10px;
+    background: linear-gradient(to right, #ff1e00, #8d1ef5);
+    ;
+    position: absolute;
+    bottom: 150px;
+    left: 0;
+    /* border-radius: 50px; */
+}
+
+.cicle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1920px;
+    height: 500px;
+}
+
+.cicle::after {
+    content: "";
+    display: block;
+    width: 960px;
+    height: 10px;
+    background: linear-gradient(to right, #8d1ef5, #ff1e00);
+    position: absolute;
+    bottom: 150px;
+    right: 0;
+}
+
+
+.box1 .gnb_li {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.box1 .gnb_li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #444;
+    /* border-radius: 60px; */
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    top: 0;
+    left: 0;
+}
+
+.box1 .gnb_li>a {
+    position: relative;
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: white;
+    top: 0;
+    left: 0;
+
+    font-size: 18px;
+}
+
+svg {
+    width: 0;
+    height: 0;
+}
+
+
+.section.on .box {
+    /* transform: translate(0, 0); */
+    opacity: 1;
+    transition: 0.5s 0.9s;
+    transform: translate(0, 0);
+
+    /* max-width: 1440px; */
+    width: 100%;
+    height: 900px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+
+    background: rgba(255, 245, 245, 0.45);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 10px;
+}
+
+.section .box {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 80px;
+    font-weight: 600;
+    /* transform: translate(-500px, 0); */
+    opacity: 0;
+    scale: 0;
+}
+
+.section.on .box {
+    /* transform: translate(0, 0); */
+    opacity: 1;
+    transition: 0.5s 0.5s;
+    scale: 1;
+}
