@@ -61,7 +61,7 @@
                     </ul>
                     <div class="txt">
                         <div class="cicle"></div>
-                        <h2>픽셀 부터 디자인 까지.</h2>
+                        <h2>디자인은 픽셀로 부터</h2>
                         <span class="span">포토폴리오</span>
                     </div>
 
@@ -111,9 +111,9 @@
                         y: -1080,
                         rotation: 0,
                         duration: 1.5,
-                        delay: 3,
-                        ease: 'Power4.easeIn',
-                        borderRadius: '20%'
+                        delay: 2,
+                        ease: 'Power1.easeIn',
+                        borderRadius: '70%'
                     })
 
                     .from('.txt', {
@@ -121,7 +121,6 @@
                         // y: -2000,
                         autoAlpha: 0,
                         duration: 1,
-                        // ease: 'Bounce.easeInOut',
                     })
 
                     .from('.num', {
@@ -142,65 +141,71 @@
                         duration: 1,
                     })
 
-                    .to('.s1', {
-                        x: -100,
-                        y: 0,
-                        duration: 0.8,
-                        rotation: 360,
-                        borderRadius: '50%',
-                        ease: 'bounce',
-                    })
-                    .to('.s2', {
-                        x: -200,
-                        y: 0,
-                        duration: 1,
-                        rotation: 360,
-                        borderRadius: 100,
-                        ease: 'bounce',
-                    })
-                    .to('.s3', {
-                        x: -300,
-                        y: 0,
-                        duration: 1,
-                        rotation: 360,
-                        borderRadius: 100,
-                        ease: 'bounce',
-                    })
-                    .to('.s4', {
-                        x: -400,
-                        y: 0,
-                        duration: 1,
-                        rotation: 360,
-                        borderRadius: 100,
-                        ease: 'bounce',
-                    })
+                // .to('.s1', {
+                //     x: -100,
+                //     y: 0,
+                //     duration: 0.8,
+                //     rotation: 360,
+                //     borderRadius: '50%',
+                //     ease: 'bounce',
+                // })
+                // .to('.s2', {
+                //     x: -200,
+                //     y: 0,
+                //     duration: 1,
+                //     rotation: 360,
+                //     borderRadius: 100,
+                //     ease: 'bounce',
+                // })
+                // .to('.s3', {
+                //     x: -300,
+                //     y: 0,
+                //     duration: 1,
+                //     rotation: 360,
+                //     borderRadius: 100,
+                //     ease: 'bounce',
+                // })
+                // .to('.s4', {
+                //     x: -400,
+                //     y: 0,
+                //     duration: 1,
+                //     rotation: 360,
+                //     borderRadius: 100,
+                //     ease: 'bounce',
+                // })
 
 
             }
-            gsap.to(".con .text", {
-                x: 1000,
-                // y: -100,
+            gsap.from(".con .text", {
+                // x: 1000,
+                // y: -1000,
+                fontSize: '1000px',
                 opacity: 0,
-                duration: 2,
+                duration: 1,
                 delay: 0,
+                rotation: 0,
+                // ease: 'power3.inOut'
+            });
+
+            gsap.from(".con .text01", {
+                // x: -1000,
+                // y: -1000,
+                fontSize: '5000px',
+                opacity: 0,
+                duration: 1,
+                delay: 0.5,
+                rotation: 0,
                 // ease: 'Bounce.easeInOut',
             });
 
-            gsap.to(".con .text01", {
-                x: -1000,
-                // y: 10,
+            gsap.from(".con .text02", {
+                // x: 1000,
+                // y: -1000,
+                fontSize: '5000px',
                 opacity: 0,
-                duration: 3,
+                duration: 1,
                 delay: 1,
-                // ease: 'Bounce.easeInOut',
-            });
-
-            gsap.to(".con .text02", {
-                x: 1000,
-                // y: 200,
-                opacity: 0,
-                duration: 3,
-                delay: 1.5,
+                rotation: 0,
                 // ease: 'Bounce.easeInOut',
             });
 
